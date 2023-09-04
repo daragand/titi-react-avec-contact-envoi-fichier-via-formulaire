@@ -1,0 +1,59 @@
+.clickandcollect {
+    main h3 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    main p {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .dashed-line {
+        width: 5px;
+        margin: 0 auto;
+    }
+
+    .newsletter {
+        background-color: rgba(217, 217, 217, 0.44);
+
+        padding: 60px 100px;
+    }
+
+    .newsletter-content {
+        background-color: #576D8B;
+        padding: 70px;
+        border-radius: 7px;
+        display: flex;
+    }
+
+    .newsletter-content a {
+        margin: 0 auto;
+        padding: 20px 125px;
+        font-size: 38px;
+    }
+
+    /* Media queries */
+
+    @media screen and (max-width: 992px) {
+        .newsletter-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .newsletter {
+            padding: 20px 30px;
+        }
+
+        .newsletter-content {
+            padding: 20px 30px;
+        }
+
+        .newsletter-content a {
+            padding: 20px 20px;
+        }
+    }
+}

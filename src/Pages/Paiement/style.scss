@@ -1,0 +1,92 @@
+.paiement {
+    main h3 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .dashed-line {
+        width: 5px;
+        margin: 0 auto;
+    }
+
+    .percent33 {
+        margin: auto;
+        margin-left: 5px;
+    }
+
+    .percent33 p {
+        color: black;
+        background-color: rgb(210, 190, 190);
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+    .paiement {
+        margin-top: 1rem;
+    }
+
+    .main-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #paiement {
+        margin-top: 50px;
+    }
+
+    .text-left {
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .right-image {
+        width: 25%;
+    }
+
+    .right-image p {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        color: black;
+        border: 0.2rem solid black;
+    }
+
+    .right-image img {
+        width: 90%;
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 60px;
+        padding: 20px;
+    }
+
+    .dashed {
+        border-top: dashed;
+    }
+
+    .btn-form {
+        margin: 60px auto;
+        padding: 20px 125px;
+        font-size: 38px;
+    }
+
+    #card-element {
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,87 @@
+footer {
+    background-color: #102940;
+    padding: 60px 100px;
+    color: white;
+    margin-top: auto;
+}
+
+footer .optimal-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+}
+
+footer .optimal-width div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+footer div * {
+    margin-bottom: 10px;
+}
+
+footer svg {
+    fill: white;
+    height: 40px;
+    width: 40px
+}
+
+.maps {
+    max-width: 300px;
+    width: 100% !important;
+}
+
+.mapouter {
+    width: 100% !important;
+    height: 300px;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer .optimal-width {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    footer .optimal-width {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+}
+
+/*======= Map Styling ============*/
+.gmnoprint a,
+.gmnoprint span,
+.gmnoprint,
+.gm-style-cc {
+    display: none !important;
+}
+
+.gmnoprint div {
+    background: none !important;
+}
+
+#GMapsID div div a div img {
+    display: none;
+}

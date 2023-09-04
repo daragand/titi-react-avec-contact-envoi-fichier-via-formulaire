@@ -1,0 +1,93 @@
+header.home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../../public/images/banniere.png');
+    min-height: 616px;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    padding: 20px 35px;
+}
+
+nav #links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 35px;
+
+}
+
+#links #top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top a:first-of-type {
+    margin-right: 26px;
+}
+
+#links #bottom {
+    margin-top: 23px;
+}
+
+#links svg {
+    display: none;
+}
+
+header #bottom a {
+    color: black;
+}
+
+header.home #bottom a {
+    color: white;
+}
+
+#bottom a:not(:last-of-type) {
+    margin-right: 58px;
+}
+
+.header-mobile {
+    width: 75vw;
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    left: -75vw;
+    transition: 0.5s;
+}
+
+.header-mobile.open {
+    left: 0;
+}
+
+.header-mobile ul {
+    list-style: none;
+}
+
+.header-mobile ul li {
+    margin-bottom: 25px;
+}
+
+.header-mobile ul a {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+
+    #links #top,
+    #links #bottom {
+        display: none !important;
+    }
+
+    #links svg {
+        display: unset !important;
+        height: 60px;
+        margin: auto;
+    }
+}
